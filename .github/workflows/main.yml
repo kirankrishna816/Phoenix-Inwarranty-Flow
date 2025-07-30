@@ -13,7 +13,7 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-
+    
     steps:
       -name: checkout the code
        uses: actions/checkout@v4.2.2
@@ -21,7 +21,7 @@ jobs:
       -name: Install node.js and npm
        uses: actions/setup-node@v3.9.1
         with:
-          node-versions:'22'
+          node-versions: '22'
       
       -name: Install newman and html-extra globally
        run: npm install -g newman && npm install -g newman-reporter-htmlextra
